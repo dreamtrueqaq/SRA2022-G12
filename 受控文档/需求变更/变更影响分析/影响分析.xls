@@ -1,0 +1,379 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html><head>    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    <title>影响分析</title>    <style type="text/css">    	br {mso-data-placement:same-cell;}        table.thin {            border-collapse: collapse;            border: .5pt solid #000;            background-color: white;            word-break: break-all;            word-wrap: break-word;            table-layout: fixed;        }        .tr_cls {            padding: 1px;            border-collapse: collapse;            border: .5pt solid #000;            background-color: white;        }        .td_cls {            padding: 5px;            border-collapse: collapse;            border: .5pt solid #000;            vertical-align: middle;            text-align: left;            word-break: break-all;            word-wrap: break-word;            background-color: white;        }        .td_center_cls {            padding: 5px;            border-collapse: collapse;            border: .5pt solid #000;            vertical-align: middle;            text-align: center;            background-color: white;        }        .td_right_cls {            padding: 5px;            border-collapse: collapse;            border: .5pt solid #000;            vertical-align: middle;            text-align: right;            background-color: white;        }        .thead_cls {            cursor: pointer;            font-family: "SimHei";            background-color: white;        }        .th_cls {            padding: 5px;            border-collapse: collapse;            border: .5pt solid #000;            vertical-align: middle;            text-align: center;            background-color: white;        }        #fixed {            position: fixed;            left: 400px;            top: 100px;        }        .title_report {            color: #03005C;            font-family: "SimHei";            font-size: 30px;            font-weight: 500;            line-height: 35px;            overflow: hidden;        }    </style></head><body>
+    <!-- 	<div align="left" style="width:89%;font-weight: bold;">一、综合分析（分析&nbsp;<span style="color:blue">3</span>&nbsp;层）</div>
+   			<p/>
+			<br/>
+	   		<table border="1" cellpadding="0" cellspacing="0" width="95%">
+	   			<tr align="center">
+						<td style="font-family: 'SimHei';">序号</td>
+						<td style="font-family: 'SimHei';">被影响文档及版本</td>
+						<td style="font-family: 'SimHei';">被影响条目数量</td>
+						<td style="font-family: 'SimHei';">被影响条目比例</td>
+				</tr>
+				
+					<s:iterator value="#indirectEffects[1]" var="effect" status="sta">
+		   				<tr>
+		   					<td align="center" width="40px">1</td>
+		   					<td align="left" width="400px"> ()</td>
+		   					<td align="center" width="125px">
+		   					
+				   			</td> 
+		   					<td align="center" width="125px">%</td>
+		   				</tr>
+		   			</s:iterator>
+				
+			</table>	
+			<p/>
+			<br/> -->
+    <BR>
+    <br>
+
+    <BR><div align="left" style="width:89%;font-weight: bold;">条目影响详细分析（分析3层）</div>
+    <BR>
+    <br>
+    <BR><table width="95%">
+        <tbody><tr align="center">
+            <td style="font-family: 'SimHei';">序号</td>
+            <td style="font-family: 'SimHei';">被影响的文档及版本</td>
+            <td style="font-family: 'SimHei';">造成影响文档及版本</td>
+            <td style="font-family: 'SimHei';">被影响条目数量</td>
+            <td style="font-family: 'SimHei';">被影响的条目比例</td>
+        </tr>
+        
+            
+                <tr>
+                    <td align="center" width="40px">1</td>
+                    <td align="left" width="400px">用户手册(当前版本)
+                    </td>
+                    <td align="left" width="400px">教师需求(当前版本)
+                    </td>
+                    <td align="center" width="125px">
+                        1
+                    </td>
+                    <td align="center" width="125px">100.0%</td>
+                </tr>
+            
+                <tr>
+                    <td align="center" width="40px">2</td>
+                    <td align="left" width="400px">需求规格说明书(当前版本)
+                    </td>
+                    <td align="left" width="400px">教师需求(当前版本)
+                    </td>
+                    <td align="center" width="125px">
+                        1
+                    </td>
+                    <td align="center" width="125px">100.0%</td>
+                </tr>
+            
+                <tr>
+                    <td align="center" width="40px">3</td>
+                    <td align="left" width="400px">需求规格说明书(当前版本)
+                    </td>
+                    <td align="left" width="400px">数据字典(当前版本)
+                    </td>
+                    <td align="center" width="125px">
+                        1
+                    </td>
+                    <td align="center" width="125px">100.0%</td>
+                </tr>
+            
+                <tr>
+                    <td align="center" width="40px">4</td>
+                    <td align="left" width="400px">需求规格说明书(当前版本)
+                    </td>
+                    <td align="left" width="400px">界面原型(当前版本)
+                    </td>
+                    <td align="center" width="125px">
+                        1
+                    </td>
+                    <td align="center" width="125px">100.0%</td>
+                </tr>
+            
+                <tr>
+                    <td align="center" width="40px">5</td>
+                    <td align="left" width="400px">数据字典(当前版本)
+                    </td>
+                    <td align="left" width="400px">教师需求(当前版本)
+                    </td>
+                    <td align="center" width="125px">
+                        1
+                    </td>
+                    <td align="center" width="125px">100.0%</td>
+                </tr>
+            
+                <tr>
+                    <td align="center" width="40px">6</td>
+                    <td align="left" width="400px">数据字典(当前版本)
+                    </td>
+                    <td align="left" width="400px">界面原型(当前版本)
+                    </td>
+                    <td align="center" width="125px">
+                        1
+                    </td>
+                    <td align="center" width="125px">100.0%</td>
+                </tr>
+            
+                <tr>
+                    <td align="center" width="40px">7</td>
+                    <td align="left" width="400px">界面原型(当前版本)
+                    </td>
+                    <td align="left" width="400px">教师需求(当前版本)
+                    </td>
+                    <td align="center" width="125px">
+                        1
+                    </td>
+                    <td align="center" width="125px">100.0%</td>
+                </tr>
+            
+        
+    </tbody></table>
+
+    <BR>
+
+    <BR><div align="left" style="width:89%;font-weight: bold;">影响全过程</div>
+    <table width="95%">
+        <tbody><tr>
+            <td align="center" style="font-family: 'SimHei';">序号</td>
+            <td align="left" style="font-family: 'SimHei';">源条目标识</td>
+            <td align="center" style="font-family: 'SimHei';">源条目内容</td>
+            <td align="center" style="font-family: 'SimHei';">级联影响（全过程）</td>
+            <td align="left" style="font-family: 'SimHei';">被影响的文档</td>
+            <td align="left" style="font-family: 'SimHei';">被影响的条目标识</td>
+            <td align="left" style="font-family: 'SimHei';">被影响的条目标题</td>
+        </tr>
+
+
+        
+            
+                <tr>
+                    <td width="55px" align="center">1</td>
+                    <td width="60px" align="center">
+                        <a href="http://localhost:81//http://localhost:81/loadItemInfoPage.action?editionUid=225c739a280848cbbedefed8b769be08&amp;formatItemUid=a573052a6bad4faaa1e0237a84793364" target="_blank">
+                            THU-87
+                        </a>
+                    </td>
+                    <td width="340px" align="left">
+                        <div style="margin:8px 8px 8px 8px;">教师评分推送</div>
+                    </td>
+                    <td width="340px" align="left">
+                        <div style="margin:8px 8px 8px 8px;">教师需求(当前版本)&nbsp;&nbsp;<a href="http://localhost:81/loadItemInfoPage.action?editionUid=225c739a280848cbbedefed8b769be08&amp;formatItemUid=a573052a6bad4faaa1e0237a84793364" target="_blank">THU-87</a></div>
+                    </td>
+                    <td width="340px" align="left">
+                        <div style="margin:8px 8px 8px 8px;">用户手册<br>(当前版本)
+                        </div>
+                    </td>
+                    <td width="60px" align="center">
+                        <a href="http://localhost:81//loadItemInfoPage.action?editionUid=7d75bc4fbac64211883b5ea364829cfe&amp;formatItemUid=46456ddb64ba48f2a1aaca7da82c35a1" target="_blank">
+                            user-manual-1
+                        </a>
+                    </td>
+                    <td width="340px" align="left">
+                        <div style="margin:8px 8px 8px 8px;">用户手册</div>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td width="55px" align="center">2</td>
+                    <td width="60px" align="center">
+                        <a href="http://localhost:81//http://localhost:81/loadItemInfoPage.action?editionUid=225c739a280848cbbedefed8b769be08&amp;formatItemUid=a573052a6bad4faaa1e0237a84793364" target="_blank">
+                            THU-87
+                        </a>
+                    </td>
+                    <td width="340px" align="left">
+                        <div style="margin:8px 8px 8px 8px;">教师评分推送</div>
+                    </td>
+                    <td width="340px" align="left">
+                        <div style="margin:8px 8px 8px 8px;">教师需求(当前版本)&nbsp;&nbsp;<a href="http://localhost:81/loadItemInfoPage.action?editionUid=225c739a280848cbbedefed8b769be08&amp;formatItemUid=a573052a6bad4faaa1e0237a84793364" target="_blank">THU-87</a></div>
+                    </td>
+                    <td width="340px" align="left">
+                        <div style="margin:8px 8px 8px 8px;">需求规格说明书<br>(当前版本)
+                        </div>
+                    </td>
+                    <td width="60px" align="center">
+                        <a href="http://localhost:81//loadItemInfoPage.action?editionUid=a649a540936446edb25621866f06c729&amp;formatItemUid=6b0207ba1bb2409189401827d78bf3f2" target="_blank">
+                            SRS-1
+                        </a>
+                    </td>
+                    <td width="340px" align="left">
+                        <div style="margin:8px 8px 8px 8px;">需求规格说明书</div>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td width="55px" align="center">3</td>
+                    <td width="60px" align="center">
+                        <a href="http://localhost:81//http://localhost:81/loadItemInfoPage.action?editionUid=225c739a280848cbbedefed8b769be08&amp;formatItemUid=a573052a6bad4faaa1e0237a84793364" target="_blank">
+                            THU-87
+                        </a>
+                    </td>
+                    <td width="340px" align="left">
+                        <div style="margin:8px 8px 8px 8px;">教师评分推送</div>
+                    </td>
+                    <td width="340px" align="left">
+                        <div style="margin:8px 8px 8px 8px;">教师需求(当前版本)&nbsp;&nbsp;<a href="http://localhost:81/loadItemInfoPage.action?editionUid=225c739a280848cbbedefed8b769be08&amp;formatItemUid=a573052a6bad4faaa1e0237a84793364" target="_blank">THU-87</a></div>
+                    </td>
+                    <td width="340px" align="left">
+                        <div style="margin:8px 8px 8px 8px;">数据字典<br>(当前版本)
+                        </div>
+                    </td>
+                    <td width="60px" align="center">
+                        <a href="http://localhost:81//http://localhost:81/loadItemInfoPage.action?editionUid=d290e05884ab4da093188cb9a1d5dce4&amp;formatItemUid=b14511fbe74d4930a5469c3f6abe2a67" target="_blank">
+                            Data-dictionary-1
+                        </a>
+                    </td>
+                    <td width="340px" align="left">
+                        <div style="margin:8px 8px 8px 8px;">数据字典</div>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td width="55px" align="center">4</td>
+                    <td width="60px" align="center">
+                        <a href="http://localhost:81//http://localhost:81/loadItemInfoPage.action?editionUid=225c739a280848cbbedefed8b769be08&amp;formatItemUid=a573052a6bad4faaa1e0237a84793364" target="_blank">
+                            THU-87
+                        </a>
+                    </td>
+                    <td width="340px" align="left">
+                        <div style="margin:8px 8px 8px 8px;">教师评分推送</div>
+                    </td>
+                    <td width="340px" align="left">
+                        <div style="margin:8px 8px 8px 8px;">教师需求(当前版本)&nbsp;&nbsp;<a href="http://localhost:81/loadItemInfoPage.action?editionUid=225c739a280848cbbedefed8b769be08&amp;formatItemUid=a573052a6bad4faaa1e0237a84793364" target="_blank">THU-87</a></div>
+                    </td>
+                    <td width="340px" align="left">
+                        <div style="margin:8px 8px 8px 8px;">界面原型<br>(当前版本)
+                        </div>
+                    </td>
+                    <td width="60px" align="center">
+                        <a href="http://localhost:81//http://localhost:81/loadItemInfoPage.action?editionUid=e20685354c4c444da16967822dc665df&amp;formatItemUid=cb7c99ee86294fbf9e02794958837be2" target="_blank">
+                            UI-1
+                        </a>
+                    </td>
+                    <td width="340px" align="left">
+                        <div style="margin:8px 8px 8px 8px;">界面原型</div>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td width="55px" align="center">5</td>
+                    <td width="60px" align="center">
+                        <a href="http://localhost:81//http://localhost:81/loadItemInfoPage.action?editionUid=225c739a280848cbbedefed8b769be08&amp;formatItemUid=a573052a6bad4faaa1e0237a84793364" target="_blank">
+                            THU-87
+                        </a>
+                    </td>
+                    <td width="340px" align="left">
+                        <div style="margin:8px 8px 8px 8px;">教师评分推送</div>
+                    </td>
+                    <td width="340px" align="left">
+                        <div style="margin:8px 8px 8px 8px;">教师需求(当前版本)&nbsp;&nbsp;<a href="http://localhost:81/loadItemInfoPage.action?editionUid=225c739a280848cbbedefed8b769be08&amp;formatItemUid=a573052a6bad4faaa1e0237a84793364" target="_blank">THU-87</a><br>------&gt;<br>数据字典(当前版本)&nbsp;&nbsp;<a href="http://localhost:81/loadItemInfoPage.action?editionUid=d290e05884ab4da093188cb9a1d5dce4&amp;formatItemUid=b14511fbe74d4930a5469c3f6abe2a67" target="_blank">Data-dictionary-1</a></div>
+                    </td>
+                    <td width="340px" align="left">
+                        <div style="margin:8px 8px 8px 8px;">需求规格说明书<br>(当前版本)
+                        </div>
+                    </td>
+                    <td width="60px" align="center">
+                        <a href="http://localhost:81//loadItemInfoPage.action?editionUid=a649a540936446edb25621866f06c729&amp;formatItemUid=6b0207ba1bb2409189401827d78bf3f2" target="_blank">
+                            SRS-1
+                        </a>
+                    </td>
+                    <td width="340px" align="left">
+                        <div style="margin:8px 8px 8px 8px;">需求规格说明书</div>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td width="55px" align="center">6</td>
+                    <td width="60px" align="center">
+                        <a href="http://localhost:81//http://localhost:81/loadItemInfoPage.action?editionUid=225c739a280848cbbedefed8b769be08&amp;formatItemUid=a573052a6bad4faaa1e0237a84793364" target="_blank">
+                            THU-87
+                        </a>
+                    </td>
+                    <td width="340px" align="left">
+                        <div style="margin:8px 8px 8px 8px;">教师评分推送</div>
+                    </td>
+                    <td width="340px" align="left">
+                        <div style="margin:8px 8px 8px 8px;">教师需求(当前版本)&nbsp;&nbsp;<a href="http://localhost:81/loadItemInfoPage.action?editionUid=225c739a280848cbbedefed8b769be08&amp;formatItemUid=a573052a6bad4faaa1e0237a84793364" target="_blank">THU-87</a><br>------&gt;<br>界面原型(当前版本)&nbsp;&nbsp;<a href="http://localhost:81/loadItemInfoPage.action?editionUid=e20685354c4c444da16967822dc665df&amp;formatItemUid=cb7c99ee86294fbf9e02794958837be2" target="_blank">UI-1</a></div>
+                    </td>
+                    <td width="340px" align="left">
+                        <div style="margin:8px 8px 8px 8px;">需求规格说明书<br>(当前版本)
+                        </div>
+                    </td>
+                    <td width="60px" align="center">
+                        <a href="http://localhost:81//loadItemInfoPage.action?editionUid=a649a540936446edb25621866f06c729&amp;formatItemUid=6b0207ba1bb2409189401827d78bf3f2" target="_blank">
+                            SRS-1
+                        </a>
+                    </td>
+                    <td width="340px" align="left">
+                        <div style="margin:8px 8px 8px 8px;">需求规格说明书</div>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td width="55px" align="center">7</td>
+                    <td width="60px" align="center">
+                        <a href="http://localhost:81//http://localhost:81/loadItemInfoPage.action?editionUid=225c739a280848cbbedefed8b769be08&amp;formatItemUid=a573052a6bad4faaa1e0237a84793364" target="_blank">
+                            THU-87
+                        </a>
+                    </td>
+                    <td width="340px" align="left">
+                        <div style="margin:8px 8px 8px 8px;">教师评分推送</div>
+                    </td>
+                    <td width="340px" align="left">
+                        <div style="margin:8px 8px 8px 8px;">教师需求(当前版本)&nbsp;&nbsp;<a href="http://localhost:81/loadItemInfoPage.action?editionUid=225c739a280848cbbedefed8b769be08&amp;formatItemUid=a573052a6bad4faaa1e0237a84793364" target="_blank">THU-87</a><br>------&gt;<br>界面原型(当前版本)&nbsp;&nbsp;<a href="http://localhost:81/loadItemInfoPage.action?editionUid=e20685354c4c444da16967822dc665df&amp;formatItemUid=cb7c99ee86294fbf9e02794958837be2" target="_blank">UI-1</a></div>
+                    </td>
+                    <td width="340px" align="left">
+                        <div style="margin:8px 8px 8px 8px;">数据字典<br>(当前版本)
+                        </div>
+                    </td>
+                    <td width="60px" align="center">
+                        <a href="http://localhost:81//http://localhost:81/loadItemInfoPage.action?editionUid=d290e05884ab4da093188cb9a1d5dce4&amp;formatItemUid=b14511fbe74d4930a5469c3f6abe2a67" target="_blank">
+                            Data-dictionary-1
+                        </a>
+                    </td>
+                    <td width="340px" align="left">
+                        <div style="margin:8px 8px 8px 8px;">数据字典</div>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td width="55px" align="center">8</td>
+                    <td width="60px" align="center">
+                        <a href="http://localhost:81//http://localhost:81/loadItemInfoPage.action?editionUid=225c739a280848cbbedefed8b769be08&amp;formatItemUid=a573052a6bad4faaa1e0237a84793364" target="_blank">
+                            THU-87
+                        </a>
+                    </td>
+                    <td width="340px" align="left">
+                        <div style="margin:8px 8px 8px 8px;">教师评分推送</div>
+                    </td>
+                    <td width="340px" align="left">
+                        <div style="margin:8px 8px 8px 8px;">教师需求(当前版本)&nbsp;&nbsp;<a href="http://localhost:81/loadItemInfoPage.action?editionUid=225c739a280848cbbedefed8b769be08&amp;formatItemUid=a573052a6bad4faaa1e0237a84793364" target="_blank">THU-87</a><br>------&gt;<br>界面原型(当前版本)&nbsp;&nbsp;<a href="http://localhost:81/loadItemInfoPage.action?editionUid=e20685354c4c444da16967822dc665df&amp;formatItemUid=cb7c99ee86294fbf9e02794958837be2" target="_blank">UI-1</a><br>------&gt;<br>数据字典(当前版本)&nbsp;&nbsp;<a href="http://localhost:81/loadItemInfoPage.action?editionUid=d290e05884ab4da093188cb9a1d5dce4&amp;formatItemUid=b14511fbe74d4930a5469c3f6abe2a67" target="_blank">Data-dictionary-1</a></div>
+                    </td>
+                    <td width="340px" align="left">
+                        <div style="margin:8px 8px 8px 8px;">需求规格说明书<br>(当前版本)
+                        </div>
+                    </td>
+                    <td width="60px" align="center">
+                        <a href="http://localhost:81//loadItemInfoPage.action?editionUid=a649a540936446edb25621866f06c729&amp;formatItemUid=6b0207ba1bb2409189401827d78bf3f2" target="_blank">
+                            SRS-1
+                        </a>
+                    </td>
+                    <td width="340px" align="left">
+                        <div style="margin:8px 8px 8px 8px;">需求规格说明书</div>
+                    </td>
+                </tr>
+            
+        
+    </tbody></table>
+    <BR>
+        <!--  		    <div align="left" style="width:89%;font-weight: bold;">条目间直接影响</div>
+		    <table border="1" cellpadding="0" cellspacing="0">
+  			<tr align="center">
+	  			<td style="font-family: 'SimHei';">序号</td>
+	  			<td style="font-family: 'SimHei';">源文档/版本</td>
+	  			<td style="font-family: 'SimHei';">源条目标识</td>
+	  			<td style="font-family: 'SimHei';">源条目概要</td>
+	  			<td style="font-family: 'SimHei';">文档/版本</td>
+	  			<td style="font-family: 'SimHei';">条目标识</td>
+	  			<td style="font-family: 'SimHei';">条目标题</td>
+  			</tr>
+  			
+  		</table>-->
+<BR></body></html>
